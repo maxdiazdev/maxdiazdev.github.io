@@ -1,5 +1,5 @@
 {
-  "name": "max-giron-codes",
+  "name": "max-diaz-codes",
   "version": "1.0.0",
   "description": "A Portfolio of Web Design & Development",
   "scripts": {
@@ -16,7 +16,7 @@
     "watch:html": "onchange 'dev/pug/*.pug' -- npm run build:html",
     "watch:css": "onchange 'dev/scss/*.scss' -- npm run build:css"
   },
-  "author": "Max Giron",
+  "author": "Max Diaz",
   "license": "ISC",
   "devDependencies": {
     "@anduh/pug-cli": "^1.0.0-alpha8",
