@@ -1,0 +1,34 @@
+{
+  "name": "max-giron-codes",
+  "version": "1.0.0",
+  "description": "A Portfolio of Web Design & Development",
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer --autoprefixer.browsers 'last 2 versions, &gt; 1%' -r dist/css/styles.css",
+    "build": "npm-run-all -p build:*",
+    "build:html": "npm run pug",
+    "build:css": "npm-run-all -s sass autoprefixer",
+    "pug": "pug3 --pretty dev/pug/*pug --out ./",
+    "sass": "sass 'dev/scss/index.scss' 'dist/css/styles.css'",
+    "serve": "reload -b -p 3000",
+    "start": "npm-run-all -s build -p serve watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-run-all -p watch:*",
+    "watch:html": "onchange 'dev/pug/*.pug' -- npm run build:html",
+    "watch:css": "onchange 'dev/scss/*.scss' -- npm run build:css"
+  },
+  "author": "Max Giron",
+  "license": "ISC",
+  "devDependencies": {
+    "@anduh/pug-cli": "^1.0.0-alpha8",
+    "autoprefixer": "^10.4.4",
+    "install": "^0.13.0",
+    "npm": "^8.7.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "postcss": "^8.4.12",
+    "postcss-cli": "^9.1.0",
+    "pug": "^3.0.2",
+    "reload": "^3.2.0",
+    "sass": "^1.50.0"
+  }
+}

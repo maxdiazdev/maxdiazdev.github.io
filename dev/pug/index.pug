@@ -1,0 +1,75 @@
+extends templates/_default.pug
+
+block layout
+	header#header
+		.profile
+			img.profile-image(src="dist/img/profile-img.jpg")
+			.profile-name Max Giron
+	#wrapper
+		section#intro
+			span.terminal-text Hey there, @nytimes! &#128075;
+			h1 I'm a <a class="disabled" href="#" onclick="toggleTheme()">front-end developer</a> squashing bugs on the &#127760;, <a href="#" onclick="toggleTheme()">shooting film</a> in my free time. I balance visual design with intuitive experiences.
+		section#works
+			.card
+				a.card-content(href="/portfolio-youtube-cassette")
+					.card-image#worksFelipe
+					.card-caption
+						h2 Felipe the Cassette
+						ul
+							li.card-tags HTML
+							li.card-tags SASS
+							li.card-tags NodeJS
+							li.card-tags YouTube API
+						p Felipe is the result of a CSS "speed drawing" exercise I did to relieve my nostalgia. I took the project a step further and familiarized myself with Google's YouTube API to give Felipe playlist-making abilities. I made this before cassettes were cool again.
+			.card
+				a.card-content(href="/theblaze-doa-generator")
+					.card-image#worksTheBlaze
+					.card-caption
+						h2 Day-of-Air Generator
+						ul
+							li.card-tags HTML
+							li.card-tags SASS
+							li.card-tags JS
+							li.card-tags Canvas API
+						p I worked at a niche, relatively small news media company, where I noticed designers were bogged down creating on-air assets with guest names. I created a simple interface to save them from opening Photoshop!
+			.card
+				a.card-content(href="/portfolio-kanye-tlop")
+					.card-image#worksTlop
+					.card-caption
+						h2 The Life of Pablo
+						ul
+							li.card-tags HTML
+							li.card-tags CSS
+							li.card-tags jQuery
+						p An experimental website that unpacks a vinyl record inside the browser. The goal was to rebrand Mr. West's album which lacked any reference to famous "Pablos." I used SVG paths to wrap the album's song title around the vinyl's coaster.
+			.card
+				a.card-content(href="https://www.awwwards.com/sites/international-womens-day")
+					.card-image#worksIwd
+					.card-caption
+						h2 Int. Women’s Day
+						ul
+							li.card-tags HTML
+							li.card-tags CSS
+							li.card-tags JS
+							li.card-tags Git
+						p I had the pleasure of working on Apple's .com page for International Women's Day as a third-party vendor. This was a team effort involving producers, designers, and developers. The page earned an AWWWARD.
+		section#film
+			.card
+				.card-content.film-photos
+					img(src="./dist/img/film/doggy-portrait.jpg")
+			.card
+				.card-content.film-photos
+					img(src="./dist/img/film/moon-and-shadows.jpg")
+			.card
+				.card-content.film-photos
+					img(src="./dist/img/film/nyc-market.jpg")
+			.card
+				.card-content.film-photos
+					img(src="./dist/img/film/waiting-santa-monica.jpg")
+			.card
+				.card-content.film-photos
+					img(src="./dist/img/film/yours-truly-hawaii.jpg")
+			.card
+				.card-content.film-photos
+					img(src="/dist/img/film/flowers-americana.jpg")
+		footer#footer © 2022 Max Giron. Let's create magic &#10024;

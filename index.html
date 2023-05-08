@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Max Giron: Front-End Developer</title>
+    <meta name="description" content="A Portfolio of Web Design &amp; Development">
+    <meta name="author" content="Max Giron">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="./dist/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./dist/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./dist/img/favicons/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" href="dist/css/styles.css">
+  </head>
+  <body>
+    <header id="header">
+      <div class="profile"><img class="profile-image" src="dist/img/profile-img.jpg">
+        <div class="profile-name">Max Giron</div>
+      </div>
+    </header>
+    <div id="wrapper">
+      <section id="intro"><span class="terminal-text">Hey there, @nytimes! &#128075;</span>
+        <h1>I'm a <a class="disabled" href="#" onclick="toggleTheme()">front-end developer</a> squashing bugs on the &#127760;, <a href="#" onclick="toggleTheme()">shooting film</a> in my free time. I balance visual design with intuitive experiences.</h1>
+      </section>
+      <section id="works">
+        <div class="card"><a class="card-content" href="/portfolio-youtube-cassette">
+            <div class="card-image" id="worksFelipe"></div>
+            <div class="card-caption">
+              <h2>Felipe the Cassette</h2>
+              <ul>
+                <li class="card-tags">HTML</li>
+                <li class="card-tags">SASS</li>
+                <li class="card-tags">NodeJS</li>
+                <li class="card-tags">YouTube API</li>
+              </ul>
+              <p>Felipe is the result of a CSS "speed drawing" exercise I did to relieve my nostalgia. I took the project a step further and familiarized myself with Google's YouTube API to give Felipe playlist-making abilities. I made this before cassettes were cool again.</p>
+            </div></a></div>
+        <div class="card"><a class="card-content" href="/theblaze-doa-generator">
+            <div class="card-image" id="worksTheBlaze"></div>
+            <div class="card-caption">
+              <h2>Day-of-Air Generator</h2>
+              <ul>
+                <li class="card-tags">HTML</li>
+                <li class="card-tags">SASS</li>
+                <li class="card-tags">JS</li>
+                <li class="card-tags">Canvas API</li>
+              </ul>
+              <p>I worked at a niche, relatively small news media company, where I noticed designers were bogged down creating on-air assets with guest names. I created a simple interface to save them from opening Photoshop!</p>
+            </div></a></div>
+        <div class="card"><a class="card-content" href="/portfolio-kanye-tlop">
+            <div class="card-image" id="worksTlop"></div>
+            <div class="card-caption">
+              <h2>The Life of Pablo</h2>
+              <ul>
+                <li class="card-tags">HTML</li>
+                <li class="card-tags">CSS</li>
+                <li class="card-tags">jQuery</li>
+              </ul>
+              <p>An experimental website that unpacks a vinyl record inside the browser. The goal was to rebrand Mr. West's album which lacked any reference to famous "Pablos." I used SVG paths to wrap the album's song title around the vinyl's coaster.</p>
+            </div></a></div>
+        <div class="card"><a class="card-content" href="https://www.awwwards.com/sites/international-womens-day">
+            <div class="card-image" id="worksIwd"></div>
+            <div class="card-caption">
+              <h2>Int. Women’s Day</h2>
+              <ul>
+                <li class="card-tags">HTML</li>
+                <li class="card-tags">CSS</li>
+                <li class="card-tags">JS</li>
+                <li class="card-tags">Git</li>
+              </ul>
+              <p>I had the pleasure of working on Apple's .com page for International Women's Day as a third-party vendor. This was a team effort involving producers, designers, and developers. The page earned an AWWWARD.</p>
+            </div></a></div>
+      </section>
+      <section id="film">
+        <div class="card">
+          <div class="card-content film-photos"><img src="./dist/img/film/doggy-portrait.jpg"></div>
+        </div>
+        <div class="card">
+          <div class="card-content film-photos"><img src="./dist/img/film/moon-and-shadows.jpg"></div>
+        </div>
+        <div class="card">
+          <div class="card-content film-photos"><img src="./dist/img/film/nyc-market.jpg"></div>
+        </div>
+        <div class="card">
+          <div class="card-content film-photos"><img src="./dist/img/film/waiting-santa-monica.jpg"></div>
+        </div>
+        <div class="card">
+          <div class="card-content film-photos"><img src="./dist/img/film/yours-truly-hawaii.jpg"></div>
+        </div>
+        <div class="card">
+          <div class="card-content film-photos"><img src="/dist/img/film/flowers-americana.jpg"></div>
+        </div>
+      </section>
+      <footer id="footer">© 2022 Max Giron. Let's create magic &#10024;</footer>
+    </div>
+    <script src="../../../dist/js/scripts.js"></script>
+  </body>
+</html>
